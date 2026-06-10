@@ -43,3 +43,5 @@ next-env.d.ts
 *.venv
 
 temp.md
+
+__pycache__
