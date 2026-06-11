@@ -50,10 +50,17 @@ app = FastAPI(
 #     allow_headers=["*"],
 # )
 
+FRONTEND_URL = os.getenv("FRONTEND_URL", "http://localhost:5173")
+
 app.add_middleware(
     CORSMiddleware,
     # For local dev, explicitly name the Vite port instead of using "*"
-    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173"], 
+    # allow_origins=["http://localhost:5173", "http://127.0.0.1:5173"], 
+    # production update
+    allow_origins=[
+        "http://localhost:5173",
+        FRONTEND_URL
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
