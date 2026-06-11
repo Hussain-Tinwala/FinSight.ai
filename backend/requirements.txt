@@ -1,0 +1,19 @@
+fastapi
+uvicorn
+sqlalchemy
+psycopg2-binary
+torch --index-url https://download.pytorch.org/whl/cpu
+lightgbm
+prophet
+scikit-learn
+statsmodels
+pandas
+numpy
+langgraph
+langchain
+google-generativeai
+langchain-google-genai
+python-dotenv
+pyjwt
+bcrypt
+email-validator
